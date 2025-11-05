@@ -188,7 +188,7 @@
             box-shadow: inset 0 0 60px rgba(0,0,0,0.8), 0 0 40px var(--accent-red);
         }
 
-        /* --- NOUVEAU DESIGN DU BÛCHER --- */
+        /* --- DESIGN DU BÛCHER --- */
         .pyre-logs {
             position: absolute;
             width: 100%;
@@ -203,53 +203,12 @@
             box-shadow: 0 4px 8px rgba(0,0,0,0.5);
         }
 
-        .log-1 {
-            width: 60%;
-            height: 25px;
-            top: 45%;
-            left: 20%;
-            transform: rotate(-20deg);
-        }
-
-        .log-2 {
-            width: 60%;
-            height: 25px;
-            top: 45%;
-            left: 20%;
-            transform: rotate(20deg);
-        }
-
-        .log-3 {
-            width: 50%;
-            height: 22px;
-            top: 60%;
-            left: 25%;
-            transform: rotate(-35deg);
-        }
-
-        .log-4 {
-            width: 50%;
-            height: 22px;
-            top: 60%;
-            left: 25%;
-            transform: rotate(35deg);
-        }
-        
-        .log-5 {
-            width: 40%;
-            height: 20px;
-            top: 30%;
-            left: 30%;
-            transform: rotate(15deg);
-        }
-
-        .log-6 {
-            width: 40%;
-            height: 20px;
-            top: 30%;
-            left: 30%;
-            transform: rotate(-15deg);
-        }
+        .log-1 { width: 60%; height: 25px; top: 45%; left: 20%; transform: rotate(-20deg); }
+        .log-2 { width: 60%; height: 25px; top: 45%; left: 20%; transform: rotate(20deg); }
+        .log-3 { width: 50%; height: 22px; top: 60%; left: 25%; transform: rotate(-35deg); }
+        .log-4 { width: 50%; height: 22px; top: 60%; left: 25%; transform: rotate(35deg); }
+        .log-5 { width: 40%; height: 20px; top: 30%; left: 30%; transform: rotate(15deg); }
+        .log-6 { width: 40%; height: 20px; top: 30%; left: 30%; transform: rotate(-15deg); }
 
         /* --- FEU --- */
         .fire {
@@ -322,18 +281,9 @@
 
         /* --- Responsive Design --- */
         @media (max-width: 950px) {
-            .container {
-                flex-direction: column;
-                align-items: center;
-            }
-            #accused-gallery {
-                width: 100%;
-                max-width: 450px;
-            }
-            #pyre {
-                width: 320px;
-                height: 320px;
-            }
+            .container { flex-direction: column; align-items: center; }
+            #accused-gallery { width: 100%; max-width: 450px; }
+            #pyre { width: 320px; height: 320px; }
         }
     </style>
 </head>
@@ -360,7 +310,6 @@
         <!-- Zone du Bûcher -->
         <section id="tribunal-section">
             <div id="pyre" class="drop-zone">
-                <!-- Le nouveau bûcher en bois -->
                 <div class="pyre-logs">
                     <div class="log log-1"></div>
                     <div class="log log-2"></div>
@@ -387,7 +336,7 @@
     <script>
         document.addEventListener('DOMContentLoaded', () => {
 
-            // --- Base de Données des Personnages ---
+            // --- Base de Données des Personnages (MISE À JOUR) ---
             const characters = [
                 { id: 1, name: "La Petite Fée", image: "https://i.ibb.co/6yFqQ2r/vader.jpg", judged: false },
                 { id: 2, name: "Le Benoît", image: "https://i.ibb.co/3T4pVrC/cersei.jpg", judged: false },
